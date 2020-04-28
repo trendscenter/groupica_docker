@@ -1,6 +1,6 @@
 1. build.sh - Build docker image.
 2. Dockerfile - Instructions required for building docker image.
-3. groupica - MATLAB executable built using Linux 64 and MATLAB R2016b.
+3. groupica - MATLAB executable built using Linux 64 and MATLAB R2016b. File is automatically downloaded from the web in build.sh file.
 4. icatb_defaults.m - Group ica defaults file. Please note that settings needs to be changed before building docker using build.sh file.
 5. readme.txt - Instructions for building and running docker.
 6. run.sh - You need to change the input and output directories on your machine.
