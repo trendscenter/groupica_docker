@@ -224,8 +224,10 @@ global RAND_SHUFFLE;
 %% Results summary options
 global GICA_RESULTS_SUMMARY;
 
-modalityType = icatb_get_modality;
+%% exit app
+global EXIT_GICA_APP;
 
+modalityType = icatb_get_modality;
 
 %% Naming Convention Output Files( Analyze Format)
 COMPONENT_NAMING = '_component_ica_';
@@ -709,3 +711,6 @@ RAND_SHUFFLE = 1;
 %% PRINT Resolution for gica summary (only for deployed applications)
 GICA_RESULTS_SUMMARY.print_resolution = '-r72';
 GICA_RESULTS_SUMMARY.format = 'html';
+
+% for docker apps set this variable to 0 for copying the data from the container. 
+EXIT_GICA_APP =0;
